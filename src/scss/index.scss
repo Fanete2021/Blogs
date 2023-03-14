@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'main';
+@import 'form';
+@import 'post';
+@import 'comment';
+
+body {
+    background: $themeColor;
+}
+
+pre {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+}

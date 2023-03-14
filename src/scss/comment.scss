@@ -1,0 +1,40 @@
+.comment {
+    background-color: $commentColor;
+    margin: 0 1.5%;
+}
+
+.comment__header {
+    display: flex;
+    justify-content: space-between;
+
+    .header__left,
+    .header__right {
+        display: flex;
+    }
+
+    .header__name {
+    }
+
+    .header__date {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .header__like {
+        margin-right: 10px;
+    }
+
+    .header__trash {
+    }
+
+    margin-top: 5px;
+}
+
+.comment__text {
+    margin: 5px 0;
+}

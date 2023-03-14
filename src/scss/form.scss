@@ -1,0 +1,97 @@
+.form {
+    background: $formColor;
+    border-radius: 0.25em;
+    z-index: 9999;
+
+    position: absolute;
+    top: 200px;
+    margin: 0 30%;
+    width: 40%;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    div,
+    input,
+    textarea,
+    button {
+        margin-top: 10px;
+        margin: 10px 10% 0;
+    }
+
+    .form__title-field {
+        color: rgb(151, 166, 169);
+    }
+
+    .form__error {
+        color: rgb(201, 43, 43);
+        margin-left: 5%;
+    }
+
+    .form__name {
+        width: 135px;
+    }
+
+    .form__date {
+        background-color: #e7f3ff;
+        height: 40px;
+        width: 130px;
+        color: #385898;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+
+        &::-webkit-calendar-picker-indicator {
+            cursor: pointer;
+        }
+    }
+
+    .form__send {
+        align-self: center;
+        justify-content: center;
+        width: 100px;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        line-height: 30px;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #385898;
+        background-color: #e7f3ff;
+        cursor: pointer;
+        user-select: none;
+        appearance: none;
+        touch-action: manipulation;
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px #666;
+        }
+        &:hover {
+            background-color: #dbe7f2;
+        }
+        &:active {
+            transform: scale(0.96);
+        }
+        &:disabled {
+            pointer-events: none;
+            opacity: 0.65;
+        }
+    }
+
+    .form__text {
+        height: 120px;
+        resize: none;
+        width: 79%;
+    }
+
+    .form__close {
+        position: absolute;
+        right: -7.5%;
+        top: 0;
+        cursor: pointer;
+        color: white;
+    }
+}

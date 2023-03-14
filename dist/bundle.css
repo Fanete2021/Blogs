@@ -1,0 +1,241 @@
+/*!************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/index.scss ***!
+  \************************************************************************************************************/
+.main {
+  margin: 10px 25% 0;
+}
+
+.creator-posts {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(151, 166, 169);
+  border-color: rgb(151, 166, 169);
+  font-size: 24px;
+}
+
+.separation {
+  margin-top: 10px;
+  border-top: 1px solid rgb(151, 166, 169);
+}
+
+.post {
+  margin-top: 50px;
+}
+
+.form {
+  background: rgb(44, 52, 58);
+  border-radius: 0.25em;
+  z-index: 9999;
+  position: absolute;
+  top: 200px;
+  margin: 0 30%;
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.form div,
+.form input,
+.form textarea,
+.form button {
+  margin-top: 10px;
+  margin: 10px 10% 0;
+}
+.form .form__title-field {
+  color: rgb(151, 166, 169);
+}
+.form .form__error {
+  color: rgb(201, 43, 43);
+  margin-left: 5%;
+}
+.form .form__name {
+  width: 135px;
+}
+.form .form__date {
+  background-color: #e7f3ff;
+  height: 40px;
+  width: 130px;
+  color: #385898;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.form .form__date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+.form .form__send {
+  align-self: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #385898;
+  background-color: #e7f3ff;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+.form .form__send:focus-visible {
+  box-shadow: 0 0 0 2px #666;
+}
+.form .form__send:hover {
+  background-color: #dbe7f2;
+}
+.form .form__send:active {
+  transform: scale(0.96);
+}
+.form .form__send:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+.form .form__text {
+  height: 120px;
+  resize: none;
+  width: 79%;
+}
+.form .form__close {
+  position: absolute;
+  right: -7.5%;
+  top: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.post {
+  background: rgb(118, 149, 174);
+  min-height: 50px;
+  word-wrap: break-word;
+}
+
+.post__wrapper {
+  border: 4px solid rgb(151, 166, 169);
+  border-bottom: none;
+}
+
+.post__info {
+  display: flex;
+  margin: 0 5%;
+}
+.post__info .info__user-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+.post__info .info__date {
+  margin-left: 20px;
+}
+
+.post__text {
+  margin: 10px 1.5% 0;
+  padding-bottom: 10px;
+}
+
+.post__panel-comments {
+  background-color: rgb(153, 215, 227);
+}
+.post__panel-comments .panel-comments__comments {
+  padding: 3px 0;
+}
+.post__panel-comments .panel-comments__creator {
+  text-align: center;
+  background-color: rgb(141, 190, 200);
+  display: flex;
+  flex-direction: column;
+}
+.post__panel-comments .panel-comments__creator .creator__open {
+  cursor: pointer;
+}
+.post__panel-comments .panel-comments__creator div {
+  display: flex;
+  flex-direction: row;
+}
+.post__panel-comments .panel-comments__creator .creator__name {
+  margin: 5px 1.5%;
+}
+.post__panel-comments .panel-comments__creator .creator__name input {
+  width: 100px;
+}
+.post__panel-comments .panel-comments__creator .creator__text textarea {
+  margin: 5px 1.5%;
+  min-height: 30px;
+  resize: none;
+  width: 80%;
+}
+.post__panel-comments .panel-comments__creator .creator__add {
+  align-self: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #385898;
+  background-color: #e7f3ff;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+.post__panel-comments .panel-comments__creator .creator__add:focus-visible {
+  box-shadow: 0 0 0 2px #666;
+}
+.post__panel-comments .panel-comments__creator .creator__add:hover {
+  background-color: #dbe7f2;
+}
+.post__panel-comments .panel-comments__creator .creator__add:active {
+  transform: scale(0.96);
+}
+.post__panel-comments .panel-comments__creator .creator__add:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.comment {
+  background-color: rgb(167, 195, 201);
+  margin: 0 1.5%;
+}
+
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.comment__header .header__left,
+.comment__header .header__right {
+  display: flex;
+}
+.comment__header .header__date {
+  margin-left: 10px;
+}
+.comment__header img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.comment__header .header__like {
+  margin-right: 10px;
+}
+.comment__text {
+  margin: 5px 0;
+}
+
+body {
+  background: rgb(23, 28, 32);
+}
+
+pre {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
